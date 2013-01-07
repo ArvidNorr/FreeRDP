@@ -652,10 +652,23 @@ BOOL rdp_server_accept_mcs_connect_initial(rdpRdp* rdp, STREAM* s)
 		printf(" %s", rdp->settings->ChannelDefArray[i].Name);
 	}
 	printf("\n");
+	if(rdp->transport->TlsIn!=NULL){
+		if(rdp->transport->TlsOut==NULL){
+			printf("Quick fix TLS !!!!!!\n");
+			rdp->transport->TlsOut = rdp->transport->TlsIn ;                        
+		}
+	}
+	if(rdp->transport->TcpIn!=NULL){
+		if(rdp->transport->TcpOut==NULL){
+			printf("Quick fix TCP !!!!!!\n");
+			rdp->transport->TcpOut = rdp->transport->TcpIn ;                        
+		}
+	}
 
-	if (!mcs_send_connect_response(rdp->mcs))
+	if (!mcs_send_connect_response(rdp->mcs)){
+		printf("Failure sending connect response") ;
 		return FALSE;
-
+	}
 	rdp->state = CONNECTION_STATE_MCS_CONNECT;
 
 	return TRUE;
