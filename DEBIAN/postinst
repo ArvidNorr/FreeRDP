@@ -1,0 +1,47 @@
+#!/bin/sh
+echo "FreeRDP is now installed"
+# TODO fix some more logic in this file.
+ldconfig
+ln -s /usr/local/lib/libfreerdp-cache.so.1.1.0 /usr/local/lib/libfreerdp-cache.so
+ln -s /usr/local/lib/libfreerdp-client.so.1.1.0 /usr/local/lib/libfreerdp-client.so
+ln -s /usr/local/lib/libfreerdp-codec.so.1.1.0 /usr/local/lib/libfreerdp-codec.so
+ln -s /usr/local/lib/libfreerdp-common.so.1.1.0-dev /usr/local/lib/libfreerdp-common.so
+ln -s /usr/local/lib/libfreerdp-core.so.1.1.0 /usr/local/lib/libfreerdp-core.so
+ln -s /usr/local/lib/libfreerdp-crypto.so.1.1.0 /usr/local/lib/libfreerdp-crypto.so
+ln -s /usr/local/lib/libfreerdp-gdi.so.1.1.0 /usr/local/lib/libfreerdp-gdi.so
+ln -s /usr/local/lib/libfreerdp-locale.so.1.1.0 /usr/local/lib/libfreerdp-locale.so
+ln -s /usr/local/lib/libfreerdp-rail.so.1.1.0 /usr/local/lib/libfreerdp-rail.so
+ln -s /usr/local/lib/libfreerdp-utils.so.1.1.0 /usr/local/lib/libfreerdp-utils.so
+# libwinpr
+ln -s /usr/local/lib/libwinpr-asn1.so.0.1.0 /usr/local/lib/libwinpr-asn1.so
+ln -s /usr/local/lib/libwinpr-bcrypt.so.0.1.0 /usr/local/lib/libwinpr-bcrypt.so
+ln -s /usr/local/lib/libwinpr-credentials.so.0.1.0 /usr/local/lib/libwinpr-credentials.so
+ln -s /usr/local/lib/libwinpr-credui.so.0.1.0 /usr/local/lib/libwinpr-credui.so
+ln -s /usr/local/lib/libwinpr-crt.so.0.1.0 /usr/local/lib/libwinpr-crt.so
+ln -s /usr/local/lib/libwinpr-crypto.so.0.1.0 /usr/local/lib/libwinpr-crypto.so
+ln -s /usr/local/lib/libwinpr-dsparse.so.0.1.0 /usr/local/lib/libwinpr-dsparse.so
+ln -s /usr/local/lib/libwinpr-environment.so.0.1.0 /usr/local/lib/libwinpr-environment.so
+ln -s /usr/local/lib/libwinpr-error.so.0.1.0 /usr/local/lib/libwinpr-error.so
+ln -s /usr/local/lib/libwinpr-file.so.0.1.0 /usr/local/lib/libwinpr-file.so
+ln -s /usr/local/lib/libwinpr-handle.so.0.1.0 /usr/local/lib/libwinpr-handle.so
+ln -s /usr/local/lib/libwinpr-heap.so.0.1.0 /usr/local/lib/libwinpr-heap.so
+ln -s /usr/local/lib/libwinpr-interlocked.so.0.1.0 /usr/local/lib/libwinpr-interlocked.so
+ln -s /usr/local/lib/libwinpr-io.so.0.1.0 /usr/local/lib/libwinpr-io.so
+ln -s /usr/local/lib/libwinpr-library.so.0.1.0 /usr/local/lib/libwinpr-library.so
+ln -s /usr/local/lib/libwinpr-path.so.0.1.0 /usr/local/lib/libwinpr-path.so
+ln -s /usr/local/lib/libwinpr-pipe.so.0.1.0 /usr/local/lib/libwinpr-pipe.so
+ln -s /usr/local/lib/libwinpr-pool.so.0.1.0 /usr/local/lib/libwinpr-pool.so
+ln -s /usr/local/lib/libwinpr-registry.so.0.1.0 /usr/local/lib/libwinpr-registry.so
+ln -s /usr/local/lib/libwinpr-rpc.so.0.1.0 /usr/local/lib/libwinpr-rpc.so
+ln -s /usr/local/lib/libwinpr-sspicli.so.0.1.0 /usr/local/lib/libwinpr-sspicli.so
+ln -s /usr/local/lib/libwinpr-sspi.so.0.1.0 /usr/local/lib/libwinpr-sspi.so
+ln -s /usr/local/lib/libwinpr-synch.so.0.1.0 /usr/local/lib/libwinpr-synch.so
+ln -s /usr/local/lib/libwinpr-sysinfo.so.0.1.0 /usr/local/lib/libwinpr-sysinfo.so
+ln -s /usr/local/lib/libwinpr-thread.so.0.1.0 /usr/local/lib/libwinpr-thread.so
+ln -s /usr/local/lib/libwinpr-timezone.so.0.1.0 /usr/local/lib/libwinpr-timezone.so
+ln -s /usr/local/lib/libwinpr-utils.so.0.1.0 /usr/local/lib/libwinpr-utils.so
+ln -s /usr/local/lib/libwinpr-winhttp.so.0.1.0 /usr/local/lib/libwinpr-winhttp.so
+ln -s /usr/local/lib/libwinpr-winsock.so.0.1.0 /usr/local/lib/libwinpr-winsock.so
+ldconfig
+echo "link fixed"
+

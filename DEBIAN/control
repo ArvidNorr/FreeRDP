@@ -1,0 +1,9 @@
+Package: FreeRDP
+Version: 1.1.0
+Section: base 
+Priority: optional
+Architecture: all
+Essential: no
+Depends: libxkbfile-dev
+Maintainer: none <none@gmail.com>
+Description: Install package for FreeRDP.
