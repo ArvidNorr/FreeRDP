@@ -16,7 +16,7 @@ cp /usr/local/lib/libfreerdp*.1.1.0 build/debian/usr/local/lib/
 #cp /usr/local/lib/libfreerdp*.a build/debian/usr/local/lib/
 #cp /usr/local/lib/libfreerdp*.la build/debian/usr/local/lib/
 cp /usr/local/lib/libwinpr*.0.1.0 build/debian/usr/local/lib/
-cp /usr/local/lib/freerdp/* build/debian/usr/local/lib/freerdp/
+#cp /usr/local/lib/freerdp/* build/debian/usr/local/lib/freerdp/
 cp /usr/local/bin/xfreerdp build/debian/usr/local/bin/
 cp freerdp.conf build/debian/etc/ld.so.conf.d/
 
